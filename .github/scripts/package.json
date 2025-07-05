@@ -1,4 +1,11 @@
 {
+  "name": "n8n-railway",
+  "version": "1.0.0",
+  "description": "n8n deployment for Render",
+  "scripts": {
+    "build": "npx turbo run build",
+    "start": "n8n"
+  },
   "dependencies": {
     "cacheable-lookup": "6.1.0",
     "conventional-changelog": "^4.0.0",
@@ -8,5 +15,11 @@
     "picocolors": "1.0.1",
     "semver": "7.5.4",
     "tempfile": "5.0.0"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
